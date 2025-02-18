@@ -1,0 +1,120 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: none; /* Semi-transparent navbar */
+    color: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+/* Logo */
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 32px;
+    height: 32px;
+    margin-right: 10px;
+}
+
+/* Navigation Links */
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: rgb(129, 51, 51);
+    text-decoration: none;
+    font-size: 18px;
+}
+.nav:hover{
+    color:rgb(230, 218, 218);
+}
+
+
+/* Hamburger Menu */
+.hamburger {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background: url('./blue.jpg') no-repeat center center/cover;
+    padding: 50px;
+}
+
+/* About Section */
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* About Card Styling */
+.about-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:transparent;
+    border-radius:5px;
+    overflow: hidden;
+    width: 50%;
+    max-width: 900px;
+    padding: 20px;
+    margin: 10vw 0;
+}
+
+/* Profile Image */
+.profile-img {
+    width: 180px;
+    height: 180px;
+    margin-right: 20px;
+    object-fit: cover;
+}
+
+/* About Text */
+.about-text {
+    max-width: 600px;
+}
+
+.about-text h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #572525;
+}
+
+.about-text p {
+    font-size: 1rem;
+    color: #2c2b2b;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .about-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    
